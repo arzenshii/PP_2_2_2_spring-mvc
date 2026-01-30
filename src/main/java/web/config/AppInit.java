@@ -6,10 +6,9 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
 
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[]{
-                HibernateConfig.class
-        };
+        return null;
     }
+
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
@@ -18,8 +17,10 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
         };
     }
 
+
     @Override
     protected String[] getServletMappings() {
         return new String[]{"/"};
     }
+
 }
